@@ -11,6 +11,9 @@ class NetworkManager: ObservableObject {
     
     @Published var posts = [Post]()
     
+    func observe(){
+        
+    }
     
     func fetchData() {
         if let url = URL(string: "https://hn.algolia.com/api/v1/search?tags=front_page") {
